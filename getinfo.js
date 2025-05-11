@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
             idsToUpdateOnError.forEach(id => {
                 const el = document.getElementById(id);
                 if (el) {
-                    el.textContent = 'Error loading data. Check console.';
+                    el.textContent = 'Error loading data.';
                 }
             });
         });
