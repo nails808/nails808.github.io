@@ -1,6 +1,6 @@
 // sw.js - Service Worker
 
-const CACHE_NAME = 'my-standalone-pwa-cache-v3'; // Increment version if you change cached assets (e.g., v2, v3)
+const CACHE_NAME = 'my-standalone-pwa-cache-v4'; // Increment version if you change cached assets (e.g., v2, v3)
 const urlsToCache = [
     '/', // Represents index.html at the root
     'index.html',
