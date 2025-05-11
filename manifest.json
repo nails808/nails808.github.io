@@ -2,6 +2,7 @@
     "name": "Public Access Licence",
     "short_name": "PAL",
     "description": "Proof of concept. Not to be used",
+    "scope": "/",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#2c3e50",
