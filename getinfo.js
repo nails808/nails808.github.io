@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const petNameElement = document.getElementById('petName');
             const petBreedElement = document.getElementById('petBreed');
             const petColorElement = document.getElementById('petColor');
-            const dogMicrochipElement = document.getElementById('dogMicrochip');
+            const dogMicrochipElement = document.getElementById('petMicrochip');
 
             // Licence Info
             const licenceNumberElement = document.getElementById('licenceNumber');
@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (petColorElement) {
                 petColorElement.textContent = data.petcolor || 'N/A';
             }
-            if (dogMicrochipElement) {
-                dogMicrochipElement.textContent = data.dogmicrochip || 'N/A';
+            if (petMicrochipElement) {
+                petMicrochipElement.textContent = data.petmicrochip || 'N/A';
             }
 
             // Update Licence Info
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Optionally, display an error message to the user on the page
             const idsToUpdateOnError = [
                 'handlerName', 'handlerAddress', 'handlerPhone',
-                'petName', 'petBreed', 'petColor', 'dogMicrochip',
+                'petName', 'petBreed', 'petColor', 'petMicrochip',
                 'licenceNumber', 'startDate', 'endDate'
             ];
             idsToUpdateOnError.forEach(id => {
