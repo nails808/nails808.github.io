@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#3498db">
-    <title>My Standalone PWA</title>
+    <title>Public Access Licence</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
 
@@ -12,12 +13,63 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default"> <meta name="apple-mobile-web-app-title" content="MyPWA">
     <link rel="apple-touch-icon" href="icons/icon-192x192.png"> </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Standalone PWA!</h1>
-        <p>This app is designed to run in standalone mode and work offline.</p>
-        <p>Try disconnecting from the internet and reloading!</p>
-        <img src="icons/icon-192x192.png" alt="PWA Icon Preview">
+    <div class="container h-100 d-flex flex-column p- m-0" id="p3">
+        <div class="row flex-grow-1" style="border-top-left-radius: 20px;border-top-right-radius: 20px;border: 5px solid #54a8ee;/*height: 10%;*/">
+            <div class="col p-2"><img src="assets/img/images-2.png" width="100%"></div>
+        </div>
+        <div class="row flex-grow-1" style="background: #54a8ee;height: 50%;">
+            <div class="col p-1">
+                <div class="carousel slide" data-bs-ride="false" id="carousel-1">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="SLIDE1">
+                            <div>
+                                <div class="row pt-3">
+                                    <div class="col-7 px-3">
+                                        <h1>Assistance<br>Dogs Australia</h1><span class="heading"><strong>Phone: 1800 343 433</strong></span>
+                                        <p class="fs-6">Public Access Licence</p><span class="heading"><strong>Handlers Name</strong></span>
+                                        <p class="fs-6" id="name">Bobby Rojc</p><span class="heading"><strong>Service Dog Name</strong></span>
+                                        <p class="fs-6" id="pet">Bella</p>
+                                    </div>
+                                    <div class="col-5 px-3">
+                                        <div style="background: #ffffff;"><img src="assets/img/312981305_486224500201826_8390391872769570975_n.jpg" width="95%"></div>
+                                        <div class="text-center border rounded-0 border-1 p-1" style="background: #ffffff;border-left-style: none;"><span class="heading" style="color: rgb(0,0,0);"><strong>CERTIFIED</strong>&nbsp;<strong>TEAM</strong></span></div>
+                                        <div class="p-1" style="background: #2793eb;border-style: none;border-left: 4px solid #113d5f;"><span class="heading"><strong>Expiration</strong></span>
+                                            <p class="fs-6 p-0" style="color: rgb(0,0,0);">Jan 18, 2026</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="SLIDE2">
+                            <div>
+                                <div class="row pt-3">
+                                    <div class="col-6 px-3"><span class="heading"><strong>Dog Breed and Color</strong></span>
+                                        <p class="fs-6" id="breed">Border Collie X - Wheaten</p><span class="heading"><strong>Dog Microchip</strong></span>
+                                        <p class="fs-6" id="microchip">953010006242511</p><span class="heading"><strong>Public Access Test Date</strong></span>
+                                        <p class="fs-6">Jan 18, 2023</p><span class="heading"><strong>Licence Number</strong></span>
+                                        <p class="fs-6" id="card">003142</p>
+                                    </div>
+                                    <div class="col"><span class="heading"><strong>Handler Address Details</strong></span>
+                                        <p class="fs-6" id="address">52 Haig Street, Southbank VIC 3006</p><span class="heading"><strong>Handler Phone Number</strong></span>
+                                        <p class="fs-6" id="number">0438 192 919</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row flex-grow-1" style="background: #2793eb;border-bottom-left-radius: 19px;border-bottom-right-radius: 20px;border: 5px solid #2793eb;height: 40%;">
+            <div class="col text-center"><img class="pt-4 pb-4" src="assets/img/Screen%20Shot%202023-10-12%20at%2011.53.57%20am.png" width="50%"></div>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
