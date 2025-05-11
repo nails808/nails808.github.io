@@ -18,27 +18,8 @@ body, html {
     width: 90%;
 }
 
-h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
-
-p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 1em;
-}
-
 
 /* Basic responsive considerations */
 @media (max-width: 600px) {
-    h1 {
-        font-size: 1.8em;
-    }
-    p {
-        font-size: 1em;
-    }
-    img {
-        max-width: 100px;
-    }
+
 }
