@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch(settingsFile)
         .then(response => {
             if (!response.ok) {
-                // Construct the full URL that was attempted for better debugging on GitHub Pages
                 // response.url directly gives the final URL fetched.
                 throw new Error(`Network response was not ok for ${response.url}: ${response.status} ${response.statusText}`);
             }
@@ -15,14 +14,35 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
             // Access the data and update the HTML elements
+
+            // Handler Info
             const handlerNameElement = document.getElementById('handlerName');
+            const handlerAddressElement = document.getElementById('handlerAddress');
+            const handlerPhoneElement = document.getElementById('handlerPhone');
+
+            // Pet Info
             const petNameElement = document.getElementById('petName');
             const petBreedElement = document.getElementById('petBreed');
             const petColorElement = document.getElementById('petColor');
+            const dogMicrochipElement = document.getElementById('dogMicrochip');
 
+            // Licence Info
+            const licenceNumberElement = document.getElementById('licenceNumber');
+            const startDateElement = document.getElementById('startDate');
+            const endDateElement = document.getElementById('endDate');
+
+            // Update Handler Info
             if (handlerNameElement) {
                 handlerNameElement.textContent = data.handlername || 'N/A';
             }
+            if (handlerAddressElement) {
+                handlerAddressElement.textContent = data.handleraddress || 'N/A';
+            }
+            if (handlerPhoneElement) {
+                handlerPhoneElement.textContent = data.handlerphone || 'N/A';
+            }
+
+            // Update Pet Info
             if (petNameElement) {
                 petNameElement.textContent = data.petname || 'N/A';
             }
@@ -32,12 +52,30 @@ document.addEventListener('DOMContentLoaded', function() {
             if (petColorElement) {
                 petColorElement.textContent = data.petcolor || 'N/A';
             }
+            if (dogMicrochipElement) {
+                dogMicrochipElement.textContent = data.dogmicrochip || 'N/A';
+            }
+
+            // Update Licence Info
+            if (licenceNumberElement) {
+                licenceNumberElement.textContent = data.licencenumber || 'N/A';
+            }
+            if (startDateElement) {
+                startDateElement.textContent = data.startdate || 'N/A';
+            }
+            if (endDateElement) {
+                endDateElement.textContent = data.enddate || 'N/A';
+            }
         })
         .catch(error => {
             console.error('Error fetching or parsing settings.json:', error);
             // Optionally, display an error message to the user on the page
-            const elementsToUpdate = ['handlerName', 'petName', 'petBreed', 'petColor'];
-            elementsToUpdate.forEach(id => {
+            const idsToUpdateOnError = [
+                'handlerName', 'handlerAddress', 'handlerPhone',
+                'petName', 'petBreed', 'petColor', 'dogMicrochip',
+                'licenceNumber', 'startDate', 'endDate'
+            ];
+            idsToUpdateOnError.forEach(id => {
                 const el = document.getElementById(id);
                 if (el) {
                     el.textContent = 'Error loading data. Check console.';
