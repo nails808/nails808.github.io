@@ -1,6 +1,6 @@
 // sw.js - Service Worker
 
-const CACHE_NAME = 'my-standalone-pwa-cache-v6'; // Increment version if you change cached assets (e.g., v2, v3)
+const CACHE_NAME = 'my-standalone-pwa-cache-v7'; // Increment version if you change cached assets (e.g., v2, v3)
 const urlsToCache = [
     '/', // Represents index.html at the root
     'index.html',
@@ -17,9 +17,9 @@ const urlsToCache = [
     'icons/icon-384x384.png',
     'icons/icon-512x512.png',
     // Add any other essential assets:
-    'assets/img/header.png',
-    'assets/img/header2.jpg',
-    'assets/img/qr.png'
+    'images/header.png',
+    'images/header2.jpg',
+    'images/qr.png'
 ];
 
 // Install event: fires when the browser installs the service worker
