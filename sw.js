@@ -17,7 +17,7 @@ const urlsToCache = [
     'icons/icon-384x384.png',
     'icons/icon-512x512.png',
     // Add any other essential assets:
-    // e.g., 'images/logo.png',
+    'assets/img/images-2.png',
     //       'css/fonts/myfont.woff2',
     //       'offline.html' // If you have a specific offline fallback page
 ];
