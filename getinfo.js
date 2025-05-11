@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Path to your settings.json file
-    // If script.js is in the same root folder as settings.json and index.html:
-    const settingsFile = 'dummy.json';
-    // If settings.json is at the absolute root of your site and your script might be elsewhere:
-    // const settingsFile = '/settings.json';
+    // Path to your settings.json file.
+    // If settings.json, index.html, and script.js are all in the root of your GitHub Pages site,
+    // this relative path is correct.
+    const settingsFile = 'settings.json';
 
     fetch(settingsFile)
         .then(response => {
             if (!response.ok) {
-                throw new Error('Network response was not ok: ' + response.statusText);
+                // Construct the full URL that was attempted for better debugging on GitHub Pages
+                // response.url directly gives the final URL fetched.
+                throw new Error(`Network response was not ok for ${response.url}: ${response.status} ${response.statusText}`);
             }
             return response.json(); // Parses the response body as JSON
         })
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             elementsToUpdate.forEach(id => {
                 const el = document.getElementById(id);
                 if (el) {
-                    el.textContent = 'Error loading data';
+                    el.textContent = 'Error loading data. Check console.';
                 }
             });
         });
