@@ -1,7 +1,7 @@
 {
-  "handlerName": "John Doe",
-  "petName": "Buddy",
-  "petBreed": "Golden Retriever",
-  "petColor": "Golden",
+  "handlername": "John Doe",
+  "petname": "Buddy",
+  "petbreed": "Golden Retriever",
+  "petcolor": "Golden",
   "petMicrochip": "953010006242511"
 }
