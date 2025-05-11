@@ -95,9 +95,9 @@ document.addEventListener('DOMContentLoaded', function() {
     processField('petname', elements.petName, "Please enter the Pet's Name:");
     processField('petbreed', elements.petBreed, "Please enter the Pet's Breed:");
     processField('petcolor', elements.petColor, "Please enter the Pet's Color:");
-    processField('petmicrochip', elements.dogMicrochip, "Please enter the Pet's Microchip Number:");
+    processField('petmicrochip', elements.petMicrochip, "Please enter the Pet's Microchip Number:");
     processField('licencenumber', elements.licenceNumber, "Please enter the Licence Number:");
-    processField('startdate', elements.startDate, "Please enter the Licence Start Date (e.g., YYYY-MM-DD):");
-    processField('enddate', elements.endDate, "Please enter the Licence End Date (e.g., YYYY-MM-DD):");
+    processField('startdate', elements.startDate, "Please enter the Licence Start Date (e.g., Jan 01 2023):");
+    processField('enddate', elements.endDate, "Please enter the Licence End Date (e.g., Jan 01 2026):");
 
 });
