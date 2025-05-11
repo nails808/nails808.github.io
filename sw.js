@@ -6,7 +6,9 @@ const urlsToCache = [
     'index.html',
     'style.css',
     'script.js',
+    'getinfo.js',
     'webmanifest.manifest',
+    "dummy.json",
     // Add all your icons (ensure these paths are correct and files exist)
     'icons/icon-72x72.png',
     'icons/icon-96x96.png',
