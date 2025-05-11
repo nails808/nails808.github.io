@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Path to your settings.json file.
     // If settings.json, index.html, and script.js are all in the root of your GitHub Pages site,
     // this relative path is correct.
-    const settingsFile = 'dummy.json';
+    const settingsFile = 'settings.json';
 
     fetch(settingsFile)
         .then(response => {
