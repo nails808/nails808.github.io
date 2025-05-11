@@ -12,11 +12,11 @@ body, html {
     box-sizing: border-box;
 }
 
-.container {
+/* .container {
     padding: 20px;
     max-width: 600px; /* Max width for content readability */
     width: 90%;
-}
+} */
 
 
 /* Basic responsive considerations */
