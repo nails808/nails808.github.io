@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         petname: "pal_petname",
         petbreed: "pal_petbreed",
         petcolor: "pal_petcolor",
-        dogmicrochip: "pal_dogmicrochip",
+        petmicrochip: "pal_petmicrochip",
         licencenumber: "pal_licencenumber",
         startdate: "pal_startdate",
         enddate: "pal_enddate"
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         petName: document.getElementById('petName'),
         petBreed: document.getElementById('petBreed'),
         petColor: document.getElementById('petColor'),
-        dogMicrochip: document.getElementById('dogMicrochip'),
+        petMicrochip: document.getElementById('petMicrochip'),
         licenceNumber: document.getElementById('licenceNumber'),
         startDate: document.getElementById('startDate'),
         endDate: document.getElementById('endDate')
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
     processField('petname', elements.petName, "Please enter the Pet's Name:");
     processField('petbreed', elements.petBreed, "Please enter the Pet's Breed:");
     processField('petcolor', elements.petColor, "Please enter the Pet's Color:");
-    processField('dogmicrochip', elements.dogMicrochip, "Please enter the Dog's Microchip Number:");
+    processField('petmicrochip', elements.dogMicrochip, "Please enter the Pet's Microchip Number:");
     processField('licencenumber', elements.licenceNumber, "Please enter the Licence Number:");
     processField('startdate', elements.startDate, "Please enter the Licence Start Date (e.g., YYYY-MM-DD):");
     processField('enddate', elements.endDate, "Please enter the Licence End Date (e.g., YYYY-MM-DD):");
