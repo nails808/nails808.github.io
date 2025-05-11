@@ -1,12 +1,12 @@
 // sw.js - Service Worker
 
-const CACHE_NAME = 'my-standalone-pwa-cache-v4'; // Increment version if you change cached assets (e.g., v2, v3)
+const CACHE_NAME = 'my-standalone-pwa-cache-v5'; // Increment version if you change cached assets (e.g., v2, v3)
 const urlsToCache = [
     '/', // Represents index.html at the root
     'index.html',
     'style.css',
     'script.js',
-    'manifest.json',
+    'webmanifest.manifest',
     // Add all your icons (ensure these paths are correct and files exist)
     'icons/icon-72x72.png',
     'icons/icon-96x96.png',
@@ -17,7 +17,9 @@ const urlsToCache = [
     'icons/icon-384x384.png',
     'icons/icon-512x512.png',
     // Add any other essential assets:
-    'assets/img/images-2.png',
+    'assets/img/header.png',
+    'assets/img/header2.jpg',
+    'assets/img/qr.png',
     //       'css/fonts/myfont.woff2',
     //       'offline.html' // If you have a specific offline fallback page
 ];
