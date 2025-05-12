@@ -1,3 +1,12 @@
+Instructions for Android
+ * Open the Chrome app.
+ * Navigate to https://nails808.github.io
+ * Fill in all prompts
+ * Tap the three vertical dots in the top right corner.
+ * Select Add to Home Screen.
+ * Follow the prompt to install the app on your device
+
+
 Disclaimer:
 
 This digital representation of an Assistance Dog pass is strictly a proof of concept and for demonstration purposes only.
