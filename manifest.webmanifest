@@ -2,8 +2,8 @@
     "name": "Public Access Licence",
     "short_name": "PAL",
     "description": "Proof of concept. Not to be used",
-    "scope": "/pass/",
-    "start_url": "/pass/",
+    "scope": "/",
+    "start_url": "/
     "display": "standalone",
     "background_color": "#2c3e50",
     "theme_color": "#3498db",
@@ -59,3 +59,4 @@
         }
     ]
 }
+
